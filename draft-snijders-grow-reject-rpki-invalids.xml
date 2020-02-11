@@ -110,6 +110,7 @@
                     <t>Juniper Junos</t>
                     <t>BIRD</t>
                     <t>OpenBGPD</t>
+                    <t>gobgp</t>
                 </list>
             </t>
         </section>
