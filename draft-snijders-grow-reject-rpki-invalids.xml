@@ -62,7 +62,10 @@
 
         <section title="Recommendation">
             <t>
-                derp
+                This document recommends that IP network operators and IXP operators SHOULD reject RPKI invalid routes on all EBGP sessions.
+                 RPKI monitoring statistics that out of the 19% of Internet Prefix/ASN pairs that are signed and valid, 0.85% are invalid <xref target="RPKI-NIST"/>.
+                 There is a legitimate concern about losing traffic from routes that are signed but invalid.
+                 In practice, the impact has been shown to be minimum in the case of operators who have applied this policy <xref target="TELIA"/>.
             </t>
         </section>
 
@@ -95,10 +98,24 @@
             <?rfc include="reference.RFC.8174.xml"?>
         </references>
 
-<!--
+
         <references title="Informative References">
+        <reference anchor="RPKI-NIST" target="https://rpki-monitor.antd.nist.gov/">
+          <front>
+            <title> Validation Results of Unique IPv4 Prefix/Origin Pairs using Global RPKI</title>
+            <author fullname="NIST"/>
+            <date month="January" year="2020"/>
+          </front>
+        </reference>
+
+        <reference anchor="TELIA" target="https://www.teliacarrier.com/Our-Network/BGP-Routing/Routing-Security-.html">
+          <front>
+            <title>ROUTING SECURITY</title>
+            <author fullname="TELIA"/>
+            <date month="January" year="2020"/>
+          </front>
+        </reference>
         </references>
--->
 
         <section anchor="implementations" title="Implementation status">
             <t>
